@@ -1,4 +1,9 @@
-fetch("http://www.omdbapi.com/?t=GameofThrones&Season=1&Episode=1&apikey=b95d0e24")
+fetch("http://www.omdbapi.com/?t=Game of Thrones&Season=1&Episode=1&apikey=b95d0e24")
     .then(res => res.json())
     .then(data => console.log(data))
-    // http://www.omdbapi.com/?i=tt3896198&apikey=b95d0e24
+
+document.body.innerHTML = `<h1> movie title ${data.title}</h1>`
+
+
+
+// http://www.omdbapi.com/?i=tt3896198&apikey=b95d0e24
