@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #121212;
+    min-width: 370px;
 }
 #header {
     display: flex;
@@ -21,30 +22,29 @@ body {
 
 }
 #search-bar input{
-    height: 1.7rem;
+    height: 1.85rem;
     width: 60%;
     margin-right: 0;
     padding-left: 2rem;
+    border-radius:5px 0 0 5px;
+    border: none;
+    box-shadow: 0 0 5px #fff;
 }
 #search-bar button{
     height: 2rem;
     width: 15%;
     padding: 0;
-    margin-left: 0;
+    margin-left: -0.3em;
     border-width: 0;
     padding-block: 0;
     border-style: none;
+    border-left: 2px solid #000000 ;
     background-color: #ffffff;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0 0 5px #fff;
 }
 .icon-style {
-    background-image: url('https://fontawesome.com/icons/magnifying-glass?f=classic&s=solid'); /* replace with your icon URL */
-    /* background-position: 10px 10px; */
-    size: 16px; 
+    background-image: url('https://fontawesome.com/icons/magnifying-glass?f=classic&s=solid');
     transform: translateX(160%);
     color: #000000;
   }
-  /* .icon-style {
-    transform: translateX(160%);
-    margin-right: -4rem;
-    color: #f0ffff;
-  } */
