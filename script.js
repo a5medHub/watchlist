@@ -5,12 +5,15 @@ let movieData = []
 
 submitSearch.addEventListener("click", ()=>{
     console.table("search button clicked", inputMovie.value)
+    let theMovie = inputMovie.value
+    callTheMovieForSearchMovie(theMovie)
 })
 function renderMovieTemplateFromApiCall() {
 
 }
 
 function callTheMovieForSearchMovie(movieNameParam) {
+    console.log("movieNameParam: "+ movieNameParam)
     const privateKey = "apikey=b95d0e24"
     // let movieName = "t=Game of Thrones&Season=1&Episode=1"
     let movieName = "t="+movieNameParam
@@ -56,4 +59,4 @@ function listingMovies() {
     //     </div>`
 
 }
-    console.log(movieData)
+    // console.log(movieData)
