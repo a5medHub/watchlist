@@ -29,21 +29,18 @@ body {
     border-radius:5px 0 0 5px;
     border: none;
 }
-#search-bar button{
-    height: 2rem;
-    width: 15%;
+#search-bar button, #submit-search{
+    height: 2.05rem;
+    width: 19%;
     padding: 0;
     margin-left: -0.3em;
-    border-width: 0;
     padding-block: 0;
-    
-    border-left: 2px solid #000000 ;
     background-color: #ffffff;
     
     
 }
 #search-bar input, #search-bar button{
-    border: 1px solid #e5e7eb;
+    border: 1px solid #d1d5db;
 }
 #search-bar input:focus, #search-bar button:focus {
     box-shadow: 0 0 5px #fff;
@@ -72,4 +69,7 @@ body {
 
 p {
     font-size: 0.75em;
+}
+#submit-search {
+    border-radius: 0 8px 8px 0;
 }
