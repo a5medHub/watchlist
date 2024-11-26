@@ -20,13 +20,8 @@ function callTheMovieForSearchMovie(movieNameParam) {
     let movieName = "t="+movieNameParam // the T stand for the movie title
     let url = "http://www.omdbapi.com/?"+privateKey+"&"+movieName
 
-    fetch(url,{mode: 'no-cors'})
-    .then(res => {
-        if (!res.ok) {
-          throw new Error(`HTTP error! Status: ${res.status}`);
-        }
-        return res.json(); // Convert the response to JSON
-      })
+    fetch(url)
+    .then(res => res.json()) // Convert the response to JSON
     .then(data => {
         movieData.push(data)
         // console.log("the fetch data is: ",data)
@@ -34,7 +29,7 @@ function callTheMovieForSearchMovie(movieNameParam) {
     })
     // .catch(error => console.error('Error:', error));
     // listingMovies()
-    // console.log(movieData)
+    console.log(movieData)
     setTimeout(listingMovies, 100)
 }
 
