@@ -55,11 +55,9 @@ body {
 #listed-movie {
     display: flex;
     gap: 1;
-    flex-direction: row;
     margin: 1em 2em;
     border-bottom: 1px solid #e5e7eb;
 }
-
 #name-section,
 #theme-section,
 #details-section {
