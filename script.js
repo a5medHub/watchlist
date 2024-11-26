@@ -32,10 +32,9 @@ callTheMovieForSearchMovie("blade runner")
 
 // http://www.omdbapi.com/?i=tt3896198&apikey=b95d0e24
 function listingMovies() {
-    const movie = movieData.forEach(e => {
-        return e
+    movieData.forEach(e => {
+        console.log("movie", e)
     },0)
-    console.log("movie", movie)
     // listedMovie.innerHTML =`
     //     <div>
     //         <img style="height: 200px;" src="https://m.media-amazon.com/images/M/MV5BOWQ4YTBmNTQtMDYxMC00NGFjLTkwOGQtNzdhNmY1Nzc1MzUxXkEyXkFqcGc@._V1_SX300.jpg" alt="image for the movie">
