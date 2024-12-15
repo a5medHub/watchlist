@@ -61,3 +61,6 @@ h5 {
 #listed-movie {
     margin-top: 1em;
 }
+#listed-movie >div {
+    display: flex;
+}
