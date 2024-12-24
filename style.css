@@ -92,6 +92,10 @@ h5 {
 #name-section p{
     margin: auto 1em;
 }
+.fa-star {
+    color: #ffcc00;
+    margin-right: 0.5em;
+}
 .read-more {
     color: #ff0000;
     text-decoration: none;

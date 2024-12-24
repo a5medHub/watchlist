@@ -37,7 +37,7 @@ function listingMovies() {
             <div id="movie-details">
                 <div id="name-section">
                     <h5>${e.Title}</h5>
-                    <p>${e.imdbRating}</p>
+                    <p><i class="fa-solid fa-star"></i>${e.imdbRating}</p>
                 </div>
                 <div id="theme-section">
                     <p>${e.Runtime}</p>
