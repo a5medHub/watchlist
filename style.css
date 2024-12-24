@@ -58,8 +58,28 @@ h5 {
 #submit-search {
     border-radius: 0 8px 8px 0;
 }
-#listed-movie {
-    margin-top: 1em;
+
+#movie-card {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em auto;
+}
+#movie-details {
+    flex-direction: row;
+}
+#name-section, #theme-section, #details-section {
+    display: flex;
+    gap: 1em;
+    /* justify-content: space-around; */
+    
+}
+#name-section p{
+    margin: auto 1em;
+}
+.read-more {
+    color: #ff0000;
+    text-decoration: none;
+    line-break: auto;
 }
 #listed-movie >div {
     display: flex;
