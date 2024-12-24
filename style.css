@@ -4,6 +4,14 @@ body {
     background-color: #121212;
     min-width: 370px;
 }
+hr {
+    border: 0;
+    height: 0.1em;
+    background: #333;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
 #header {
     display: flex;
     justify-content: space-evenly;
@@ -62,7 +70,8 @@ h5 {
 #movie-card {
     display: flex;
     justify-content: space-evenly;
-    margin: 1em auto;
+    margin: 2em auto;
+    padding: 0 1.5em; 
 }
 #movie-details {
     flex-direction: row;
