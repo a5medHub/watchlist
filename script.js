@@ -10,7 +10,8 @@ submitSearch.addEventListener("click", ()=>{
     callTheMovieForSearchMovie(theMovie)
     inputMovie.value = ""
 })
-
+/* privateKey to use if current token is expired (limit:1000/day) 
+     => http://www.omdbapi.com/?i=tt3896198&apikey=4bfd9621 */
 function callTheMovieForSearchMovie(movieNameParam) {
     console.log("movieNameParam: "+ movieNameParam)
     const privateKey = "apikey=b95d0e24"
