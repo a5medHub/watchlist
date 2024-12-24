@@ -9,7 +9,7 @@ hr {
     height: 0.1em;
     background: #333;
     margin: 0 auto;
-    width: 100%;
+    max-width: 80%;
     text-align: center;
 }
 #header {
@@ -65,13 +65,21 @@ h5 {
 }
 #submit-search {
     border-radius: 0 8px 8px 0;
+    transition: all 1.5s;
 }
-
 #movie-card {
     display: flex;
     justify-content: space-evenly;
     margin: 2em auto;
     padding: 0 1.5em; 
+}
+#movie-card div{
+    margin-right: 1em;
+    transition: all 0.5s;
+}
+#movie-card img{
+    border-radius: 2px;
+    box-shadow: 0 0 15px #ffffffd7;
 }
 #movie-details {
     flex-direction: row;
@@ -79,7 +87,6 @@ h5 {
 #name-section, #theme-section, #details-section {
     display: flex;
     gap: 1em;
-    /* justify-content: space-around; */
     
 }
 #name-section p{

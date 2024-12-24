@@ -48,8 +48,8 @@ function listingMovies() {
                     <p class="plot">${plot}</p>
                 </div>
             </div>
-            <hr>
-        </div>`
+        </div>
+        <hr>`
     })
     document.querySelectorAll('.read-more').forEach(element => {
         element.addEventListener('click', function() {
