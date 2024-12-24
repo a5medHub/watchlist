@@ -4,17 +4,26 @@ const submitSearch = document.getElementById("submit-search")
 const listedMovie = document.getElementById("listed-movie")
 let movieData = []
 
-submitSearch.addEventListener("click", ()=>{
-    console.log("search button clicked", inputMovie.value)
+// Add event listener to submitSearch button
+submitSearch.addEventListener("click", handleSearch)
+
+// Add event listener to inputMovie for 'Enter' key press
+inputMovie.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") {handleSearch()}})
+        
+// Function to handle the search
+function handleSearch() {
+    console.log("search initiated", inputMovie.value)
     let theMovie = inputMovie.value
     callTheMovieForSearchMovie(theMovie)
     inputMovie.value = ""
-})
+}
 /* privateKey to use if current token is expired (limit:1000/day) 
      => http://www.omdbapi.com/?i=tt3896198&apikey=4bfd9621 */
 function callTheMovieForSearchMovie(movieNameParam) {
     console.log("movieNameParam: "+ movieNameParam)
-    const privateKey = "apikey=b95d0e24"
+    // const privateKey = "apikey=b95d0e24"
+    const privateKey = "apikey=4bfd9621"
     let movieName = "t="+movieNameParam
     let url = "http://www.omdbapi.com/?"+privateKey+"&"+movieName
     console.log("url: "+url)
@@ -42,7 +51,7 @@ function listingMovies() {
                 <div id="theme-section">
                     <p>${e.Runtime}</p>
                     <p>${e.Genre}</p>
-                    <p>Add TO WATCHLIST</p>
+                    <p><i class="<i class="fa-sharp fa-solid fa-plus"></i> Add TO WATCHLIST</p>
                 </div>
                 <div id="details-section">
                     <!-- <p>${e.Plot}</p> -->
