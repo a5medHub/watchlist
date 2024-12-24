@@ -37,7 +37,7 @@ function callTheMovieForSearchMovie(movieNameParam) {
 function listingMovies() {
     listedMovie.innerHTML =``
     movieData.forEach(e => {
-        let plot = e.Plot.length > 100 ? e.Plot.substring(0, 100) + ' <span class="read-more" data-full-plot="' + e.Plot + '">...read</span>' : e.Plot;
+        let plot = e.Plot.length > 80 ? e.Plot.substring(0, 80) + ' <span class="read-more" data-full-plot="' + e.Plot + '">...read</span>' : e.Plot;
         listedMovie.innerHTML +=`
         <div id="movie-card">
             <div>
@@ -45,13 +45,13 @@ function listingMovies() {
             </div>
             <div id="movie-details">
                 <div id="name-section">
-                    <h5>${e.Title}</h5>
+                    <h3>${e.Title}</h5>
                     <p><i class="fa-solid fa-star"></i>${e.imdbRating}</p>
                 </div>
                 <div id="theme-section">
                     <p>${e.Runtime}</p>
                     <p>${e.Genre}</p>
-                    <p><i class="<i class="fa-sharp fa-solid fa-plus"></i> Add TO WATCHLIST</p>
+                    <p><i class="fa-sharp fa-solid fa-plus"></i>Watchlist</p>
                 </div>
                 <div id="details-section">
                     <!-- <p>${e.Plot}</p> -->
