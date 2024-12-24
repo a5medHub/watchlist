@@ -10,7 +10,7 @@ submitSearch.addEventListener("click", handleSearch)
 // Add event listener to inputMovie for 'Enter' key press
 inputMovie.addEventListener("keypress", (e) => {
     if (e.key === "Enter") {handleSearch()}})
-        
+
 // Function to handle the search
 function handleSearch() {
     console.log("search initiated", inputMovie.value)
@@ -22,8 +22,8 @@ function handleSearch() {
      => http://www.omdbapi.com/?i=tt3896198&apikey=4bfd9621 */
 function callTheMovieForSearchMovie(movieNameParam) {
     console.log("movieNameParam: "+ movieNameParam)
-    // const privateKey = "apikey=b95d0e24"
-    const privateKey = "apikey=4bfd9621"
+    const privateKey = "apikey=b95d0e24"
+    // const privateKey = "apikey=4bfd9621"
     let movieName = "t="+movieNameParam
     let url = "http://www.omdbapi.com/?"+privateKey+"&"+movieName
     console.log("url: "+url)
