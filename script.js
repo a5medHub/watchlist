@@ -29,7 +29,7 @@ function callTheMovieForSearchMovie(movieNameParam) {
     console.log("url: "+url)
     fetch(url)
         .then(res => res.json())
-        .then(data => movieData.push(data))
+        .then(data => movieData.unshift(data))
         .then(listingMovies)
     
 }
