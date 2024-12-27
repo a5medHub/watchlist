@@ -29,11 +29,17 @@ function callTheMovieForSearchMovie(movieNameParam) {
     console.log("url: "+url)
     fetch(url)
         .then(res => res.json())
-        .then(data => movieData.unshift(data))
+        .then(data => {
+            let matches = movieData.filter(e => e.Title.toLowerCase().includes(movieNameParam.toLowerCase()))
+            if (matches.length === 0) {
+                movieData.unshift(data)
+            }
+        })
         .then(listingMovies)
     
 }
 
+// Function to list the movies
 function listingMovies() {
     listedMovie.innerHTML =``
     movieData.forEach(e => {
